@@ -94,17 +94,6 @@
 	</head>
 	<body onload = "">
 		<?php
-			/*
-			$games = new PDO("mysql:host=fdb7.awardspace.net;dbname=1886854_games","1886854_games","32qw32qw32qw");
-			$cmd = "SELECT * FROM Games";
-			$statement = $games->prepare($cmd);
-			$statement->execute();
-			$data = $statement->fetch();
-			print_r($data);
-			/*
-			$rowcount = $statement->rowCount();
-			print_r($rowcount);
-			*/
 			$querysearch = $_POST['favs'];
 			$querysearch = explode(" ",$searchquery);
 			for($i=0;$i<count($querysearch);$i++)
@@ -117,13 +106,6 @@
 			$statement->execute();
 			$data = $statement->fetchAll(PDO::FETCH_ASSOC);
 			echo $data;
-			/*
-			$rowcount = $statement->rowCount();
-			for($p=0;$p<$rowcount;$p++)
-			{
-				echo $data[0][Description];
-			}
-			*/
 		?>
 		<div id = "title">
 		<br/>
