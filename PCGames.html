@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+		</script>
+                <link rel = "stylesheet" type = "text/css" href = "universal.css"/>
+		<style>
+		
+		#G1,#G2,#G3,#G4,#G5,#G6,#G7,#G8,#G9,#G10,#G11,#G12,#G13,#G14,#G15,#G16,#G17,#G18,#G19,#G20,#G21,#G22,#G23,#G24,#G25,#G26,#G27,#G28,#G29,#G30,#G31,#G32,#G33,#G34,#G35,#G36,#G37,#G38,#G39,#G40,#G41,#G42,#G43,#G44,#G45,#G46,#G47,#G48,#G49,#G50,#G51,#G52,#G53,#G54,#G55,#G56,#G57,#G58,#G59,#G60,#G61,#G62,#G63,#G64,#G65,#G66,#G67,#G68,#G69,#G70,#G71,#G72,#G73,#G74,#G75,#G76
+		{
+                        
+                        position:relative;
+                    
+                        top:160px;
+                        left:50px;
+          
+			border:solid;
+			border-color:green;
+			border-radius:10px;
+			padding: 4px 4px 4px 4px;
+			font: 14pt Tahoma;
+                        width:50%;
+		}
+     
+                
+                #G1P,#G2P,#G3P,#G4P,#G5P,#G6P,#G7P,#G8P,#G9P,#G10P,#G11P,#G12P,#G13P,#G14P,#G15P,#G16P,#G17P,#G18P,#G19P,#G20P,#G21P,#G22P,#G23P,#G24P,#G25P,#G26P,#G27P,#G28P,#G29P,#G30P,#G31P,#G32P,#G33P,#G34P,#G35P,#G36P,#G37P,#G38P,#G39P,#G40P,#G41P,#G42P,#G43P,#G44P,#G45P,#G46P,#G47P,#G48P,#G49P,#G50P,#G51P,#G52P,#G53P,#G54P,#G55P,#G56P,#G57P,#G58P,#G59P,#G60P,#G61P,#G62P,#G63P,#G64P,#G65P,#G66P,#G67P,#G68P,#G69P,#G70P,#G71P,#G72P,#G73P,#G74P,#G75P,#G76P
+		{
+                        float:left;
+                        height:110px;
+                        width:180px;
+                }
+				
+       
+		</style>
+	</head>
+	<body onload = "PCgames();">
+		<?php
+			$games = new PDO("mysql:host=fdb7.awardspace.net;dbname=1886854_games","1886854_games","32qw32qw32qw");
+			$cmd = "SELECT * FROM Games WHERE Platforms LIKE '%PC%'";
+			$statement = $games->prepare($cmd);
+			$statement->execute();
+			$data = $statement->fetchAll();
+			
+                    
+                  
+			
+		?>
+		<div id = "title">
+		<br/>
+		Richard's Video Game Site <br/>
+		The Best Gaming News <br/>
+		Site Ever
+                <div id = "h1"> </div>
+		</div>
+		<a href = "index.html"> <img id = "richardsym" src = "symbol.jpg"/> </a>
+		
+		<div id = "headlines">
+		<a href = "Trailers.html"> Trailers </a> <a href = "PS4Games.html"> PS4 </a> <a href = "XboxOneGames.html"> Xbox One </a> <a href = "PCGames.html"> PC </a> <a href = "WiiUGames.html"> Wii-U </a> <a href = "UserShop.html"> User Shop </a> 
+		</div> <br/>
+		
+		<table id = "t1">
+                        <tr id = "tr1">
+                                <td> <img id = "hotgames" src = "hotgames.JPG"/></td>
+                        </tr>
+                        <tr>
+                            
+                                <td> <img src = "gtav.jpg"/><a href = "gtaV.html"><br/> 1. Grand Theft Auto V </a> 10 <br/> </td>
+                                <td> <img src = "mortalkombatx.jpg"/><a href = "mortalkombatx.html"><br/>6. Mortal Kombat X </a> 8.4 <br/></td>
+                        </tr>
+                        <tr>
+                                <td> <img src = "bloodborne.jpg"/> <a href = "bloodborne.html"><br/>2. Bloodborne </a> 9.1 <br/> </td>
+                                <td> <img src = "titansouls.jpg"/> <a href = "titansouls.html"><br/>7. Titan Souls</a> 8 <br/></td>
+                        </tr>
+                                <td> <img src = "pillarsofeternity.jpg"/>  <a href = "pillarsofeternity.html"><br/>3. Pillars of Eternity </a> 9 <br/> </td>
+                                <td> <img src = "neverwinter.jpg"/>  <a href = "neverwinter.html"><br/>8. Neverwinter </a> 7.3 <br/></td>
+                        <tr>
+                        </tr>
+                        <tr>
+                                <td><img src = "xenoblade.jpg"/>  <a href = "xenobladechronicles.html"><br/>4. Xenoblade Chronicles </a> 8.7 <br/></td>
+                                <td> <img src = "lifeisstrange.jpg"/>  <a href = "lifeisstrange.html"><br/>9. Life is Strange Episode 2 </a> 7 <br/></td>
+                        </tr>
+                        <tr>
+                                <td> <img src = "mlb15.jpg"/>  <a href = "mlb15theshow.html"><br/>5. MLB 15: The Show </a> 8.5 <br/></td>
+                                <td> <img src = "rbi15.jpg"/>  <a href = "rbibaseball.html"><br/>10. RBI Baseball 15 </a> 4.9 <br/></td>
+                        </tr>
+                       
+                        <tr>
+                                <td> <img src = "thewitcher3.jpg"/><br/> 1.  The Witcher 3: Wild Hunt May 19 </br> </td>
+                                <td><img src = "wolfensteintheoldblood.jpg"/><br/> 6.  Wolfenstein:The Old Blood </a> May 5 <br/></td>
+                        </tr>
+                        <tr>
+                                <td> <img src = "persona5.jpg"/> <br/>2.  Persona 5 </a> TBA 2015 </br> </td>
+                                <td><img src = "legendofzeldawii.jpg"/><br/> 7.  The Legend of Zelda Wii-U </a> TBA <br/></td>
+                        </tr>
+                                <td> <img src = "eslunlimited.jpg"/><br/> 3.  ESO: Tamriel Unlimited </a> Jun 9 <br/> </td>
+                                <td><img src = "metalgearsolid5.jpg"/><br/> 8.  MGS V: The Phantom Pain </a> Sept 1 <br/></td>
+                        <tr>
+                        </tr>
+                        <tr>
+                                <td><img src = "kingdomhearts3.jpg"/> <br/>4.  Kingdom Hearts III </a> TBA <br/></td>
+                                <td><img src = "batmanarkhamknight.jpg"/> <br/>9.  Batman: Arkham Knight </a> Jun 23 <br/></td>
+                        </tr>
+                        <tr>
+                                <td><img src = "projectcars.jpg"/> <br/>5.  Project CARS </a> May 12 <br/></td>
+                                <td><img src = "stateofdecay.jpg"/><br/> 10.  State of Decay: Year One Survival Edition </a> Apr 28 <br/></td>
+                        </tr>
+                </table>
+        
+		<div id = "G1">   
+        </div>
+		<div id = "G2">   
+        </div>
+		<div id = "G3">   
+        </div>
+		<div id = "G4">   
+        </div>
+		<div id = "G5">   
+        </div>
+		<div id = "G6">   
+        </div>
+		<div id = "G7">   
+        </div>
+		<div id = "G8">   
+        </div>
+		<div id = "G9">   
+        </div>
+		<div id = "G10">   
+        </div>
+		<div id = "G11">   
+        </div>
+		<div id = "G12">   
+        </div>
+		<div id = "G13">   
+        </div>
+		<div id = "G14">   
+        </div>
+		<div id = "G15">   
+        </div>
+		<div id = "G16">   
+        </div>
+		<div id = "G17">   
+        </div>
+		<div id = "G18">   
+        </div>
+		<div id = "G19">   
+        </div>
+		<div id = "G20">   
+        </div>
+		<div id = "G21">   
+        </div>
+		<div id = "G22">   
+        </div>
+		<div id = "G23">   
+        </div>
+		<div id = "G24">   
+        </div>
+		<div id = "G25">   
+        </div>
+		<div id = "G26">   
+        </div>
+		<div id = "G27">   
+        </div>
+		<div id = "G28">   
+        </div>
+		<div id = "G29">   
+        </div>
+		<div id = "G30">   
+        </div>
+		<div id = "G31">   
+        </div>
+		<div id = "G32">   
+        </div>
+		<div id = "G33">   
+        </div>
+		<div id = "G34">   
+        </div>
+		<div id = "G35">   
+        </div>
+		<div id = "G36">   
+        </div>
+		<div id = "G37">   
+        </div>
+		<div id = "G38">   
+        </div>
+		<div id = "G39">   
+        </div>
+		<div id = "G40">   
+        </div>
+		<div id = "G41">   
+        </div>
+		<div id = "G42">   
+        </div>
+		<div id = "G43">   
+        </div>
+		<div id = "G44">   
+        </div>
+		<div id = "G45">   
+        </div>
+		<div id = "G46">   
+        </div>
+		<div id = "G47">   
+        </div>
+		<div id = "G48">   
+        </div>
+		<div id = "G49">   
+        </div>
+		<div id = "G50">   
+        </div>
+		<div id = "G51">   
+        </div>
+		<div id = "G52">   
+        </div>
+		<div id = "G53">   
+        </div>
+		<div id = "G54">   
+        </div>
+		<div id = "G55">   
+        </div>
+		<div id = "G56">   
+        </div>
+		<div id = "G57">   
+        </div>
+		<div id = "G58">   
+        </div>
+		<div id = "G59">   
+        </div>
+		<div id = "G60">   
+        </div>
+		<div id = "G61">   
+        </div>
+		<div id = "G62">   
+        </div>
+		<div id = "G63">   
+        </div>
+		<div id = "G64">   
+        </div>
+		<div id = "G65">   
+        </div>
+		<div id = "G66">   
+        </div>
+		<div id = "G67">   
+        </div>
+		<div id = "G68">   
+        </div>
+		<div id = "G69">   
+        </div>
+		<div id = "G70">   
+        </div>
+		<div id = "G71">   
+        </div>
+		<div id = "G72">   
+        </div>
+		<div id = "G73">   
+        </div>
+		<div id = "G74">   
+        </div>
+		<div id = "G75">   
+        </div>
+		<div id = "G76">   
+        </div>
+		
+		<script>
+			
+            function PCgames()
+            {
+               document.getElementById("G1").innerHTML = "<img id = 'G1P' src = 'krz3.jpg'/>" + "Name: " + "<?php echo $data[0][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[0][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[0][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[0][4] ?>" + "</br>" + "Description: " + "<?php echo $data[0][5] ?>"+ "</br>";
+			   document.getElementById("G2").innerHTML = "<img id = 'G2P' src = 'darksouls2.jpg'/>" + "Name: " + "<?php echo $data[1][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[1][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[1][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[1][4] ?>" + "</br>" + "Description: " + "<?php echo $data[1][5] ?>"+ "</br>";
+			   document.getElementById("G3").innerHTML = "<img id = 'G3P' src = 'metroredux2033.jpg'/>" + "Name: " + "<?php echo $data[2][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[2][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[2][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[2][4] ?>" + "</br>" + "Description: " + "<?php echo $data[2][5] ?>"+ "</br>";
+			   document.getElementById("G4").innerHTML = "<img id = 'G4P' src = 'hearthstone.jpg'/>" + "Name: " + "<?php echo $data[3][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[3][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[3][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[3][4] ?>" + "</br>" + "Description: " + "<?php echo $data[3][5] ?>"+ "</br>";
+			   document.getElementById("G5").innerHTML = "<img id = 'G5P' src = 'dragonfall.jpg'/>" + "Name: " + "<?php echo $data[4][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[4][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[4][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[4][4] ?>" + "</br>" + "Description: " + "<?php echo $data[4][5] ?>"+ "</br>";
+			   document.getElementById("G6").innerHTML = "<img id = 'G6P' src = 'steinsgate.jpg'/>" + "Name: " + "<?php echo $data[5][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[5][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[5][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[5][4] ?>" + "</br>" + "Description: " + "<?php echo $data[5][5] ?>"+ "</br>";
+			   document.getElementById("G7").innerHTML = "<img id = 'G7P' src = 'crimzonclover.jpg'/>" + "Name: " + "<?php echo $data[6][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[6][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[6][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[6][4] ?>" + "</br>" + "Description: " + "<?php echo $data[6][5] ?>"+ "</br>";
+			   document.getElementById("G8").innerHTML = "<img id = 'G8P' src = 'shovelknight.png'/>" + "Name: " + "<?php echo $data[7][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[7][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[7][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[7][4] ?>" + "</br>" + "Description: " + "<?php echo $data[7][5] ?>"+ "</br>";
+			   document.getElementById("G9").innerHTML = "<img id = 'G9P' src = 'divinity.jpg'/>" + "Name: " + "<?php echo $data[8][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[8][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[8][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[8][4] ?>" + "</br>" + "Description: " + "<?php echo $data[8][5] ?>"+ "</br>";
+			   document.getElementById("G10").innerHTML = "<img id = 'G10P' src = 'smite.jpg'/>" + "Name: " + "<?php echo $data[9][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[9][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[9][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[9][4] ?>" + "</br>" + "Description: " + "<?php echo $data[9][5] ?>"+ "</br>";
+			   document.getElementById("G11").innerHTML = "<img id = 'G11P' src = 'wow.jpg'/>" + "Name: " + "<?php echo $data[10][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[10][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[10][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[10][4] ?>" + "</br>" + "Description: " + "<?php echo $data[10][5] ?>"+ "</br>";
+			   document.getElementById("G12").innerHTML = "<img id = 'G12P' src = 'middlearth.jpg'/>" + "Name: " + "<?php echo $data[11][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[11][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[11][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[11][4] ?>" + "</br>" + "Description: " + "<?php echo $data[11][5] ?>"+ "</br>";
+			   document.getElementById("G13").innerHTML = "<img id = 'G13P' src = 'rebirth.png'/>" + "Name: " + "<?php echo $data[12][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[12][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[12][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[12][4] ?>" + "</br>" + "Description: " + "<?php echo $data[12][5] ?>"+ "</br>";
+			   document.getElementById("G14").innerHTML = "<img id = 'G14P' src = 'log2.jpg'/>" + "Name: " + "<?php echo $data[13][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[13][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[13][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[13][4] ?>" + "</br>" + "Description: " + "<?php echo $data[13][5] ?>"+ "</br>";
+			   document.getElementById("G15").innerHTML = "<img id = 'G15P' src = 'talosprinciple.jpg'/>" + "Name: " + "<?php echo $data[14][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[14][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[14][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[14][4] ?>" + "</br>" + "Description: " + "<?php echo $data[14][5] ?>"+ "</br>";
+			   document.getElementById("G16").innerHTML = "<img id = 'G16P' src = 'inquisition.jpg'/>" + "Name: " + "<?php echo $data[15][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[15][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[15][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[15][4] ?>" + "</br>" + "Description: " + "<?php echo $data[15][5] ?>"+ "</br>";
+			   document.getElementById("G17").innerHTML = "<img id = 'G17P' src = 'stickoftruth.jpg'/>" + "Name: " + "<?php echo $data[16][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[16][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[16][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[16][4] ?>" + "</br>" + "Description: " + "<?php echo $data[16][5] ?>"+ "</br>";
+			   document.getElementById("G18").innerHTML = "<img id = 'G18P' src = 'valkyriachronicles.jpg'/>" + "Name: " + "<?php echo $data[17][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[17][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[17][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[17][4] ?>" + "</br>" + "Description: " + "<?php echo $data[17][5] ?>"+ "</br>";
+			   document.getElementById("G19").innerHTML = "<img id = 'G19P' src = 'metrolastlight.jpg'/>" + "Name: " + "<?php echo $data[18][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[18][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[18][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[18][4] ?>" + "</br>" + "Description: " + "<?php echo $data[18][5] ?>"+ "</br>";
+			   document.getElementById("G20").innerHTML = "<img id = 'G20P' src = 'blacklist.jpg'/>" + "Name: " + "<?php echo $data[19][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[19][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[19][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[19][4] ?>" + "</br>" + "Description: " + "<?php echo $data[19][5] ?>"+ "</br>";
+			   document.getElementById("G21").innerHTML = "<img id = 'G21P' src = 'scribblenauts.jpg'/>" + "Name: " + "<?php echo $data[20][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[20][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[20][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[20][4] ?>" + "</br>" + "Description: " + "<?php echo $data[20][5] ?>"+ "</br>";
+			   document.getElementById("G22").innerHTML = "<img id = 'G22P' src = 'tombraider.jpg'/>" + "Name: " + "<?php echo $data[21][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[21][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[21][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[21][4] ?>" + "</br>" + "Description: " + "<?php echo $data[21][5] ?>"+ "</br>";
+			   document.getElementById("G23").innerHTML = "<img id = 'G23P' src = 'raymanlegends.jpg'/>" + "Name: " + "<?php echo $data[22][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[22][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[22][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[22][4] ?>" + "</br>" + "Description: " + "<?php echo $data[22][5] ?>"+ "</br>";
+			   document.getElementById("G24").innerHTML = "<img id = 'G24P' src = 'revengeance.jpg'/>" + "Name: " + "<?php echo $data[23][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[23][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[23][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[23][4] ?>" + "</br>" + "Description: " + "<?php echo $data[23][5] ?>"+ "</br>";
+			   document.getElementById("G25").innerHTML = "<img id = 'G25P' src = 'blackflag.jpg'/>" + "Name: " + "<?php echo $data[24][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[24][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[24][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[24][4] ?>" + "</br>" + "Description: " + "<?php echo $data[24][5] ?>"+ "</br>";
+			   document.getElementById("G26").innerHTML = "<img id = 'G26P' src = 'stanleyparable.jpg'/>" + "Name: " + "<?php echo $data[25][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[25][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[25][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[25][4] ?>" + "</br>" + "Description: " + "<?php echo $data[25][5] ?>"+ "</br>";
+			   document.getElementById("G27").innerHTML = "<img id = 'G27P' src = 'sr4.jpg'/>" + "Name: " + "<?php echo $data[26][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[26][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[26][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[26][4] ?>" + "</br>" + "Description: " + "<?php echo $data[26][5] ?>"+ "</br>";
+			   document.getElementById("G28").innerHTML = "<img id = 'G28P' src = 'ffxiv.jpg'/>" + "Name: " + "<?php echo $data[27][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[27][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[27][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[27][4] ?>" + "</br>" + "Description: " + "<?php echo $data[27][5] ?>"+ "</br>";
+			   document.getElementById("G29").innerHTML = "<img id = 'G29P' src = 'dmc.jpg'/>" + "Name: " + "<?php echo $data[28][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[28][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[28][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[28][4] ?>" + "</br>" + "Description: " + "<?php echo $data[28][5] ?>"+ "</br>";
+			   document.getElementById("G30").innerHTML = "<img id = 'G30P' src = 'antichamber.jpg'/>" + "Name: " + "<?php echo $data[29][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[29][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[29][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[29][4] ?>" + "</br>" + "Description: " + "<?php echo $data[29][5] ?>"+ "</br>";
+			   document.getElementById("G31").innerHTML = "<img id = 'G31P' src = 'infinite.jpg'/>" + "Name: " + "<?php echo $data[30][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[30][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[30][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[30][4] ?>" + "</br>" + "Description: " + "<?php echo $data[30][5] ?>"+ "</br>";
+			   document.getElementById("G32").innerHTML = "<img id = 'G32P' src = 'walkingdead.jpg'/>" + "Name: " + "<?php echo $data[31][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[31][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[31][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[31][4] ?>" + "</br>" + "Description: " + "<?php echo $data[31][5] ?>"+ "</br>";
+			   document.getElementById("G33").innerHTML = "<img id = 'G33P' src = 'me3.jpg'/>" + "Name: " + "<?php echo $data[32][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[32][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[32][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[32][4] ?>" + "</br>" + "Description: " + "<?php echo $data[32][5] ?>"+ "</br>";
+			   document.getElementById("G34").innerHTML = "<img id = 'G34P' src = 'dishonored.jpg'/>" + "Name: " + "<?php echo $data[33][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[33][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[33][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[33][4] ?>" + "</br>" + "Description: " + "<?php echo $data[33][5] ?>"+ "</br>";
+			   document.getElementById("G35").innerHTML = "<img id = 'G35P' src = 'markoftheninja.jpg'/>" + "Name: " + "<?php echo $data[34][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[34][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[34][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[34][4] ?>" + "</br>" + "Description: " + "<?php echo $data[34][5] ?>"+ "</br>";
+			   document.getElementById("G36").innerHTML = "<img id = 'G36P' src = 'bl2.jpg'/>" + "Name: " + "<?php echo $data[35][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[35][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[35][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[35][4] ?>" + "</br>" + "Description: " + "<?php echo $data[35][5] ?>"+ "</br>";
+			   document.getElementById("G37").innerHTML = "<img id = 'G37P' src = 'fc3.jpg'/>" + "Name: " + "<?php echo $data[36][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[36][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[36][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[36][4] ?>" + "</br>" + "Description: " + "<?php echo $data[36][5] ?>"+ "</br>";
+			   document.getElementById("G38").innerHTML = "<img id = 'G38P' src = 'gw2.jpg'/>" + "Name: " + "<?php echo $data[37][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[37][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[37][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[37][4] ?>" + "</br>" + "Description: " + "<?php echo $data[37][5] ?>"+ "</br>";
+			   document.getElementById("G39").innerHTML = "<img id = 'G39P' src = 'nba2k13.jpg'/>" + "Name: " + "<?php echo $data[38][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[38][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[38][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[38][4] ?>" + "</br>" + "Description: " + "<?php echo $data[38][5] ?>"+ "</br>";
+			   document.getElementById("G40").innerHTML = "<img id = 'G40P' src = 'xcom.jpg'/>" + "Name: " + "<?php echo $data[39][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[39][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[39][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[39][4] ?>" + "</br>" + "Description: " + "<?php echo $data[39][5] ?>"+ "</br>";
+			   document.getElementById("G41").innerHTML = "<img id = 'G41P' src = 'darksiders2.jpg'/>" + "Name: " + "<?php echo $data[40][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[40][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[40][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[40][4] ?>" + "</br>" + "Description: " + "<?php echo $data[40][5] ?>"+ "</br>";
+			   document.getElementById("G42").innerHTML = "<img id = 'G42P' src = 'sleepingdogs.jpg'/>" + "Name: " + "<?php echo $data[41][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[41][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[41][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[41][4] ?>" + "</br>" + "Description: " + "<?php echo $data[41][5] ?>"+ "</br>";
+			   document.getElementById("G43").innerHTML = "<img id = 'G43P' src = 'specops.jpg'/>" + "Name: " + "<?php echo $data[42][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[42][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[42][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[42][4] ?>" + "</br>" + "Description: " + "<?php echo $data[42][5] ?>"+ "</br>";
+			   document.getElementById("G44").innerHTML = "<img id = 'G44P' src = 'mp3.jpg'/>" + "Name: " + "<?php echo $data[43][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[43][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[43][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[43][4] ?>" + "</br>" + "Description: " + "<?php echo $data[43][5] ?>"+ "</br>";
+			   document.getElementById("G45").innerHTML = "<img id = 'G45P' src = 'fez.jpg'/>" + "Name: " + "<?php echo $data[44][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[44][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[44][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[44][4] ?>" + "</br>" + "Description: " + "<?php echo $data[44][5] ?>"+ "</br>";
+			   document.getElementById("G46").innerHTML = "<img id = 'G46P' src = 'diablo3.jpg'/>" + "Name: " + "<?php echo $data[45][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[45][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[45][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[45][4] ?>" + "</br>" + "Description: " + "<?php echo $data[45][5] ?>"+ "</br>";
+			   document.getElementById("G47").innerHTML = "<img id = 'G47P' src = 'ds2.jpg'/>" + "Name: " + "<?php echo $data[46][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[46][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[46][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[46][4] ?>" + "</br>" + "Description: " + "<?php echo $data[46][5] ?>"+ "</br>";
+			   document.getElementById("G48").innerHTML = "<img id = 'G48P' src = 'sr3.jpg'/>" + "Name: " + "<?php echo $data[47][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[47][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[47][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[47][4] ?>" + "</br>" + "Description: " + "<?php echo $data[47][5] ?>"+ "</br>";
+			   document.getElementById("G49").innerHTML = "<img id = 'G49P' src = 'lanoire.jpg'/>" + "Name: " + "<?php echo $data[48][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[48][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[48][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[48][4] ?>" + "</br>" + "Description: " + "<?php echo $data[48][5] ?>"+ "</br>";
+			   document.getElementById("G50").innerHTML = "<img id = 'G50P' src = 'acr.jpg'/>" + "Name: " + "<?php echo $data[49][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[49][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[49][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[49][4] ?>" + "</br>" + "Description: " + "<?php echo $data[49][5] ?>"+ "</br>";
+			   document.getElementById("G51").innerHTML = "<img id = 'G51P' src = 'bf3.jpg'/>" + "Name: " + "<?php echo $data[50][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[50][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[50][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[50][4] ?>" + "</br>" + "Description: " + "<?php echo $data[50][5] ?>"+ "</br>";
+			   document.getElementById("G52").innerHTML = "<img id = 'G52P' src = 'mw3.jpg'/>" + "Name: " + "<?php echo $data[51][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[51][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[51][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[51][4] ?>" + "</br>" + "Description: " + "<?php echo $data[51][5] ?>"+ "</br>";
+			   document.getElementById("G53").innerHTML = "<img id = 'G53P' src = 'bastion.jpg'/>" + "Name: " + "<?php echo $data[52][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[52][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[52][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[52][4] ?>" + "</br>" + "Description: " + "<?php echo $data[52][5] ?>"+ "</br>";
+			   document.getElementById("G54").innerHTML = "<img id = 'G54P' src = 'deusex.jpg'/>" + "Name: " + "<?php echo $data[53][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[53][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[53][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[53][4] ?>" + "</br>" + "Description: " + "<?php echo $data[53][5] ?>"+ "</br>";
+			   document.getElementById("G55").innerHTML = "<img id = 'G55P' src = 'skyrim.jpg'/>" + "Name: " + "<?php echo $data[54][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[54][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[54][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[54][4] ?>" + "</br>" + "Description: " + "<?php echo $data[54][5] ?>"+ "</br>";
+			   document.getElementById("G56").innerHTML = "<img id = 'G56P' src = 'portal2.jpg'/>" + "Name: " + "<?php echo $data[55][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[55][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[55][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[55][4] ?>" + "</br>" + "Description: " + "<?php echo $data[55][5] ?>"+ "</br>";
+			   document.getElementById("G57").innerHTML = "<img id = 'G57P' src = 'warband.jpg'/>" + "Name: " + "<?php echo $data[56][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[56][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[56][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[56][4] ?>" + "</br>" + "Description: " + "<?php echo $data[56][5] ?>"+ "</br>";
+			   document.getElementById("G58").innerHTML = "<img id = 'G58P' src = 'shogun2.jpg'/>" + "Name: " + "<?php echo $data[57][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[57][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[57][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[57][4] ?>" + "</br>" + "Description: " + "<?php echo $data[57][5] ?>"+ "</br>";
+			   document.getElementById("G59").innerHTML = "<img id = 'G59P' src = 'lol.jpg'/>" + "Name: " + "<?php echo $data[58][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[58][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[58][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[58][4] ?>" + "</br>" + "Description: " + "<?php echo $data[58][5] ?>"+ "</br>";
+			   document.getElementById("G60").innerHTML = "<img id = 'G60P' src = 'maplestory.jpg'/>" + "Name: " + "<?php echo $data[59][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[59][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[59][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[59][4] ?>" + "</br>" + "Description: " + "<?php echo $data[59][5] ?>"+ "</br>";
+			   document.getElementById("G61").innerHTML = "<img id = 'G61P' src = 'terraria.jpg'/>" + "Name: " + "<?php echo $data[60][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[60][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[60][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[60][4] ?>" + "</br>" + "Description: " + "<?php echo $data[60][5] ?>"+ "</br>";
+			   document.getElementById("G62").innerHTML = "<img id = 'G62P' src = 'starbound.jpg'/>" + "Name: " + "<?php echo $data[61][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[61][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[61][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[61][4] ?>" + "</br>" + "Description: " + "<?php echo $data[61][5] ?>"+ "</br>";
+			   document.getElementById("G63").innerHTML = "<img id = 'G63P' src = 'mc.jpg'/>" + "Name: " + "<?php echo $data[62][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[62][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[62][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[62][4] ?>" + "</br>" + "Description: " + "<?php echo $data[62][5] ?>"+ "</br>";
+			   document.getElementById("G64").innerHTML = "<img id = 'G64P' src = 'garrymod.jpg'/>" + "Name: " + "<?php echo $data[63][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[63][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[63][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[63][4] ?>" + "</br>" + "Description: " + "<?php echo $data[63][5] ?>"+ "</br>";
+			   document.getElementById("G65").innerHTML = "<img id = 'G65P' src = 'csgo.jpg'/>" + "Name: " + "<?php echo $data[64][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[64][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[64][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[64][4] ?>" + "</br>" + "Description: " + "<?php echo $data[64][5] ?>"+ "</br>";
+			   document.getElementById("G66").innerHTML = "<img id = 'G66P' src = 'dota2.jpg'/>" + "Name: " + "<?php echo $data[65][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[65][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[65][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[65][4] ?>" + "</br>" + "Description: " + "<?php echo $data[65][5] ?>"+ "</br>";
+			   document.getElementById("G67").innerHTML = "<img id = 'G67P' src = 'cmw.jpg'/>" + "Name: " + "<?php echo $data[66][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[66][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[66][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[66][4] ?>" + "</br>" + "Description: " + "<?php echo $data[66][5] ?>"+ "</br>";
+			   document.getElementById("G68").innerHTML = "<img id = 'G68P' src = 'warframe.jpg'/>" + "Name: " + "<?php echo $data[67][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[67][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[67][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[67][4] ?>" + "</br>" + "Description: " + "<?php echo $data[67][5] ?>"+ "</br>";
+			   document.getElementById("G69").innerHTML = "<img id = 'G69P' src = 'rust.jpg'/>" + "Name: " + "<?php echo $data[68][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[68][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[68][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[68][4] ?>" + "</br>" + "Description: " + "<?php echo $data[68][5] ?>"+ "</br>";
+			   document.getElementById("G70").innerHTML = "<img id = 'G70P' src = 'tf2.jpg'/>" + "Name: " + "<?php echo $data[69][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[69][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[69][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[69][4] ?>" + "</br>" + "Description: " + "<?php echo $data[69][5] ?>"+ "</br>";
+			   document.getElementById("G71").innerHTML = "<img id = 'G71P' src = 'osu.jpg'/>" + "Name: " + "<?php echo $data[70][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[70][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[70][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[70][4] ?>" + "</br>" + "Description: " + "<?php echo $data[70][5] ?>"+ "</br>";
+			   document.getElementById("G72").innerHTML = "<img id = 'G72P' src = 'h1z1.jpg'/>" + "Name: " + "<?php echo $data[71][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[71][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[71][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[71][4] ?>" + "</br>" + "Description: " + "<?php echo $data[71][5] ?>"+ "</br>";
+			   document.getElementById("G73").innerHTML = "<img id = 'G73P' src = 'civ5.jpg'/>" + "Name: " + "<?php echo $data[72][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[72][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[72][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[72][4] ?>" + "</br>" + "Description: " + "<?php echo $data[72][5] ?>"+ "</br>";
+			   document.getElementById("G74").innerHTML = "<img id = 'G74P' src = 'l4d2.jpg'/>" + "Name: " + "<?php echo $data[73][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[73][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[73][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[73][4] ?>" + "</br>" + "Description: " + "<?php echo $data[73][5] ?>"+ "</br>";
+			   document.getElementById("G75").innerHTML = "<img id = 'G75P' src = 'hl2.jpg'/>" + "Name: " + "<?php echo $data[74][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[74][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[74][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[74][4] ?>" + "</br>" + "Description: " + "<?php echo $data[74][5] ?>"+ "</br>";
+			   document.getElementById("G76").innerHTML = "<img id = 'G76P' src = 'wildhunt.jpg'/>" + "Name: " + "<?php echo $data[75][1] ?>" + "</br>" + "Genre: " + "<?php echo $data[75][2] ?>" + "</br>" + "Rating: " + "<?php echo $data[75][3] ?>" + "</br>" + "Platforms: " + "<?php echo $data[75][4] ?>" + "</br>" + "Description: " + "<?php echo $data[75][5] ?>"+ "</br>";
+			   
+			   
+            }
+			
+		</script>
+	</body>
+</html>

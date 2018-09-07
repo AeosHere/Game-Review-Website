@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+                <link rel = "stylesheet" type = "text/css" href = "universal.css"/>
+		<script>
+		UserShopPoints = 0;
+			C1 = Math.floor((Math.random()*10000)+786);
+			C2 = Math.floor((Math.random()*1000)+533);
+			C3 = Math.floor((Math.random()*10000)+44);
+			C4 = Math.floor((Math.random()*1000)+73);
+			C5 = Math.floor((Math.random()*1000)+232);
+			C6 = Math.floor((Math.random()*10000)+100);
+			C7 = Math.floor((Math.random()*100)+13);
+			C8 = Math.floor((Math.random()*1000)+232);
+			C9 = Math.floor((Math.random()*1000)+561);
+		function canPurchase()
+		{
+			
+			if (UserShopPoints >= 10)
+			{
+				for (i = 0;i < shirtSectionsButtonsLength; i++)
+				{
+					shirtSectionButtons[i].disabled = false;
+				}
+			}
+			if (UserShopPoints >= 20)
+			{
+				for (i = 0;i < shirtSectionsButtonsLength; i++)
+				{
+					shoeSectionButtons[i].disabled = false;
+				}
+			}
+			if (UserShopPoints >= 50)
+			{
+				for (i = 0;i < shirtSectionsButtonsLength; i++)
+				{
+					accessoriesSectionButtons[i].disabled = false;
+				}
+			}
+		}
+		
+		function afterShirtPurchase()
+		{
+			shirtSectionButtons.disabled = true;
+                     
+		}
+		
+		function afterShoePurchase()
+		{
+			shoeSectionButtons.disabled = true;
+		}
+		
+		function afterAccessoriesPurchase()
+		{
+			accessoriesSectionButtons.disabled = true;
+		}
+			
+			function initialize()
+			{
+				pollQuestionChance = Math.floor((Math.random()*3)+1);
+				pollQuestionChance2 = Math.floor((Math.random()*2)+1);
+				poll1.style.display = "none";
+				poll2.style.display = "none";
+				poll3.style.display = "none";
+				poll4.style.display = "none";
+				poll5.style.display = "none";
+				
+				if (pollQuestionChance == 1)
+				{
+					poll1.style.display = "block";
+				}
+				if (pollQuestionChance == 2)
+				{
+					poll2.style.display = "block";
+				}
+				if (pollQuestionChance == 3)
+				{
+					poll3.style.display = "block";
+				}
+				if (pollQuestionChance2 == 1)
+				{
+					poll4.style.display = "block";
+				}
+				if (pollQuestionChance2 == 2)
+				{
+					poll5.style.display = "block";
+				}
+				for (i = 0;i < shirtSectionsButtonsLength; i++)
+				{
+					shirtSectionButtons[i].disabled = true;
+				}
+				for (i = 0;i < shoeSectionsButtonsLength; i++)
+				{
+					shoeSectionButtons[i].disabled = true;
+				}
+				for (i = 0;i < accessoriesSectionsButtonsLength; i++)
+				{
+					accessoriesSectionButtons[i].disabled = true;
+				}
+			}
+			function poll_1()
+			{	
+				poll1.innerHTML = "Collected data from everyone who answered to this poll" + "</br>" + "MMORPG = " + C1 + "</br>" + "FPS = " + C2 + "<br/>" + "Action = " + C3 + "<br/>" + "Sports = " + C4 + "<br/>" + "Adventure = " + C5 + "<br/>" + "Role Playing = " + C6 + "<br/>" + "Fighting = " + C7 + "<br/>" + "Racing = " + C8 + "<br/>" + "Strategy = " + C9 + "<br/>" + "Thanks for answering this poll. You have gain 15 points!";
+				
+				document.getElementById("b1").disabled = true;
+				UserShopPoints+=15;
+				canPurchase();
+			}
+			function poll_2()
+			{
+				poll2.innerHTML = "Collected data from everyone who answered to this poll" + "</br>" + "Mario = " + C1 + "</br>" + "Luigi = " + C2 + "<br/>" + "Princess Peach = " + C3 + "<br/>" + "Bowser = " + C4 + "<br/>" + "Yoshi = " + C5 + "<br/>" + "Rosalina = " + C6 + "<br/>" + "Toad = " + C7 + "<br/>" + "Wario = " + C8 + "<br/>" + "Bowser Jr. = " + C9 + "<br/>" + "Thanks for answering this poll. You have gain 15 points!" ;
+				
+				document.getElementById("b1").disabled = true;
+				UserShopPoints+=15;
+				canPurchase();
+			}
+			function poll_3()
+			{
+				poll3.innerHTML = "Collected data from everyone who answered to this poll" + "</br>" + "Continue playing your game because gaming is life! = " + C1 + "</br>" + "Screw gaming! Spend some wonderful and delightful time with your girlfriend = " + C3 + "<br/>" + "Let her play instead and teach her your smooth maneuvers = " + C5 + "<br/>" + "Dump her and find a gaming girlfriend = " + C7 + "<br/>" + "Thanks for answering this poll. You have gain 15 points!";
+				
+				document.getElementById("b1").disabled = true;
+				UserShopPoints+=15;
+				canPurchase();
+			
+			}
+			function poll_5()
+			{
+				poll5.innerHTML = "Collected data from everyone who answered to this poll" + "</br>" + "Popcorn Chicken = " + C1 + "</br>" + "Instant Ramen = " + C2 + "<br/>" + "Gummy Bears = " + C3 + "<br/>" + "YOLO GAMING ALL NIGHT ENERGY DRINKS = " + C4 + "<br/>" + "Frozen Pizza = " + C5 + "<br/>" + "Chips and Doritos = " + C6 + "<br/>" + "Nachos and Cheese = " + C7 + "<br/>" + "WHAT IS FOOD? GAME TILL NEAR DEATH! = " + C8 + "<br/>" + "Thanks for answering this poll. You have gain 15 points!";
+				
+				document.getElementById("b2").disabled = true;
+				UserShopPoints+=15;
+				canPurchase();
+			
+			}
+			function poll_4()
+			{
+				poll4.innerHTML = "Collected data from everyone who answered to this poll" + "</br>" + "Rzer Hydra = " + C1 + "</br>" + "Racing Wheel = " + C2 + "<br/>" + "Razer Naga Mouse = " + C3 + "<br/>" + "Logitech Gaming Headset = " + C4 + "<br/>" + "Gaming Speakers = " + C5 + "<br/>" + "Cheery MX Keyboards = " + C6 + "<br/>" + "Thanks for answering this poll. You have gain 15 points!";
+				
+				document.getElementById("b2").disabled = true;
+				UserShopPoints+=15;
+				canPurchase();
+			
+			}
+			function randomQuestion()
+			{
+				RQC = Math.floor((Math.random()*5)+1);
+				var Q1 = "What is the new League of Legends champion called?";
+				var Q2 = "In Pokemon, which type is super effective against electricity?";
+				var Q3 = "What is the name of Mario's brother?";
+				var Q4 = "What is the name of the evil dragon antagonist in Skyrim?";
+				var Q5 = "Who is the main character in Final Fantasy VII?";
+				if (RQC == 1)
+				{
+					document.getElementById("randomQ").innerHTML = Q1 + "</br>" + 
+                                        "<button onclick = 'youLose()'> Azir </button> <button onclick = 'youLose()'> Jinx </button> <button onclick = 'youLose()'> Soraka </button> <button onclick = 'youWin()'> Ekko </button>"
+                                }       
+                                       
+					
+					
+				
+				if (RQC == 2)
+				{
+					document.getElementById("randomQ").innerHTML = Q2+ "</br>" + 
+                                        "<button onclick = 'youWin()'> Ground </button> <button onclick = 'youLose()'> Water </button> <button onclick = 'youLose()'> Steel </button> <button onclick = 'youLose()'> Fighting </button>"
+						
+					
+					
+				}
+				if (RQC == 3)
+				{
+					document.getElementById("randomQ").innerHTML = Q3+ "</br>" + 
+                                        "<button onclick = 'youLose()'> Wario </button> <button onclick = 'youLose()'> Yoshi </button> <button onclick = 'youWin()'> Luigi </button> <button onclick = 'youLose()'> Shroom </button>"
+						
+				
+					
+				}
+				if (RQC == 4)
+				{
+					document.getElementById("randomQ").innerHTML = Q4+ "</br>" + 
+                                        "<button onclick = 'youLose()'> Akatosh </button> <button onclick = 'youWin()'> Alduin </button> <button onclick = 'youLose()'> Nord </button> <button onclick = 'youLose()'> Nocturne </button>"
+						
+	
+				
+					
+				}
+				if (RQC == 5)
+				{
+					document.getElementById("randomQ").innerHTML = Q5+ "</br>" + 
+                                        "<button onclick = 'youWin()'> Cloud </button> <button onclick = 'youLose()'> Justice </button> <button onclick = 'youLose()'> Sepheroth </button> <button onclick = 'youLose()'> Lightning </button>"
+						
+						
+					
+					
+				}
+			}
+                        function youWin()
+                        {
+                                document.getElementById("randomQ").innerHTML = "Congratulations, you gained the last 20 points" + "</br>" + 
+                                "needed to unlock the 50 points item purchase!";
+                                UserShopPoints+=20;
+                                canPurchase();
+                        }
+                        function youLose()
+                        {
+                                document.getElementById("randomQ").innerHTML = "Unfortunately, you failed to gain the last 20 points needed" + "</br>" +
+                                "to unlock the 50 points item purchase! Better luck next time!";
+                        }
+		</script>
+		<style>
+		
+		img#USP
+		{
+			position:absolute;
+			right:48%;
+			width:200px;
+			height:200px;
+		}
+		div#UserShopMSG
+		{
+			position:absolute;
+                        width:60%;
+                        
+			top: 35%;
+			text-align:center;
+			font: 18pt calibri;
+			color: green;
+		}
+		div#shirtSection
+		{
+			position:absolute;
+			top: 65%;
+			color:red;
+			font: 14pt futura;
+		}
+		button
+		{
+			border:solid;
+			border-color:green;
+			border-radius:8px;
+		}
+		div#shoeSection
+		{
+			position:absolute;
+			width:1400px;
+			height:1100px;
+			top:65%;
+			left:20%;
+			color:red;
+			font:14pt futura;
+
+		}
+		div#accessoriesSection
+		{
+			position:absolute;
+			top:65%;
+			left:40%;
+			color:red;
+			font:14pt futura;
+		}
+		#poll, #poll1, #poll2, #poll3
+		{
+			position:absolute;
+			top: 1600px;
+			right: 0px;
+			text-align:center;
+			border:solid;
+			border-color:brown;
+			border-width: 15px;
+			background-image: url("wood.jpg");
+			font: 14pt lato;
+		}
+		#poll4, #poll5
+		{
+			position:absolute;
+			top: 1900px;
+			right: 0px;
+			text-align:center;
+			border:solid;
+			border-color:brown;
+			border-width: 15px;
+			background-image: url("wood.jpg");
+			font: 14pt lato;
+		}
+		div#pollresults
+		{
+			position:absolute;
+			bottom:30%;
+			text-align:center;
+			left:4%;
+			
+		}
+		div#randomQ
+		{
+			position:absolute;
+			top: 2000px;
+			left: 0px;
+			text-align:center;
+			border:solid;
+			border-color:brown;
+			border-width: 15px;
+			background-image: url("wood.jpg");
+			font: 14pt lato;
+		}
+		</style>
+	</head>
+	<body onload = "initialize();randomQuestion();">
+		<div id = "title">
+		<br/>
+		Richard's Video Game Site <br/>
+		The Best Gaming News <br/>
+		Site Ever
+		</div>
+		<a href = "index.html"> <img id = "richardsym" src = "symbol.jpg"/> </a>
+		
+		<div id = "headlines">
+		<a href = "Trailers.html"> Trailers </a> <a href = "PS4Games.html"> PS4 </a> <a href = "XboxOneGames.html"> Xbox One </a> <a href = "PCGames.html"> PC </a> <a href = "WiiUGames.html"> Wii-U </a> <a href = "UserShop.html"> User Shop </a>
+		</div> <br/>
+		
+		<table id = "t1">
+                        <tr id = "tr1">
+                                <td> <img id = "hotgames" src = "hotgames.JPG"/></td>
+                        </tr>
+                        <tr>
+                            
+                                <td> <img src = "gtav.jpg"/><a href = "gtaV.html"><br/> 1. Grand Theft Auto V </a> 10 <br/> </td>
+                                <td> <img src = "mortalkombatx.jpg"/><a href = "mortalkombatx.html"><br/>6. Mortal Kombat X </a> 8.4 <br/></td>
+                        </tr>
+                        <tr>
+                                <td> <img src = "bloodborne.jpg"/> <a href = "bloodborne.html"><br/>2. Bloodborne </a> 9.1 <br/> </td>
+                                <td> <img src = "titansouls.jpg"/> <a href = "titansouls.html"><br/>7. Titan Souls</a> 8 <br/></td>
+                        </tr>
+                                <td> <img src = "pillarsofeternity.jpg"/>  <a href = "pillarsofeternity.html"><br/>3. Pillars of Eternity </a> 9 <br/> </td>
+                                <td> <img src = "neverwinter.jpg"/>  <a href = "neverwinter.html"><br/>8. Neverwinter </a> 7.3 <br/></td>
+                        <tr>
+                        </tr>
+                        <tr>
+                                <td><img src = "xenoblade.jpg"/>  <a href = "xenobladechronicles.html"><br/>4. Xenoblade Chronicles </a> 8.7 <br/></td>
+                                <td> <img src = "lifeisstrange.jpg"/>  <a href = "lifeisstrange.html"><br/>9. Life is Strange Episode 2 </a> 7 <br/></td>
+                        </tr>
+                        <tr>
+                                <td> <img src = "mlb15.jpg"/>  <a href = "mlb15theshow.html"><br/>5. MLB 15: The Show </a> 8.5 <br/></td>
+                                <td> <img src = "rbi15.jpg"/>  <a href = "rbibaseball.html"><br/>10. RBI Baseball 15 </a> 4.9 <br/></td>
+                        </tr>
+                       
+                        <tr>
+                                <td> <img src = "thewitcher3.jpg"/><br/> 1.  The Witcher 3: Wild Hunt May 19 </br> </td>
+                                <td><img src = "wolfensteintheoldblood.jpg"/><br/> 6.  Wolfenstein:The Old Blood </a> May 5 <br/></td>
+                        </tr>
+                        <tr>
+                                <td> <img src = "persona5.jpg"/> <br/>2.  Persona 5 </a> TBA 2015 </br> </td>
+                                <td><img src = "legendofzeldawii.jpg"/><br/> 7.  The Legend of Zelda Wii-U </a> TBA <br/></td>
+                        </tr>
+                                <td> <img src = "eslunlimited.jpg"/><br/> 3.  ESO: Tamriel Unlimited </a> Jun 9 <br/> </td>
+                                <td><img src = "metalgearsolid5.jpg"/><br/> 8.  MGS V: The Phantom Pain </a> Sept 1 <br/></td>
+                        <tr>
+                        </tr>
+                        <tr>
+                                <td><img src = "kingdomhearts3.jpg"/> <br/>4.  Kingdom Hearts III </a> TBA <br/></td>
+                                <td><img src = "batmanarkhamknight.jpg"/> <br/>9.  Batman: Arkham Knight </a> Jun 23 <br/></td>
+                        </tr>
+                        <tr>
+                                <td><img src = "projectcars.jpg"/> <br/>5.  Project CARS </a> May 12 <br/></td>
+                                <td><img src = "stateofdecay.jpg"/><br/> 10.  State of Decay: Year One Survival Edition </a> Apr 28 <br/></td>
+                        </tr>
+                </table>
+		
+		<img id = "USP" src = "UserShopPic.jpg"/>
+		<div id = "UserShopMSG">
+			Welcome to the User Exclusive Point Shop! </br>
+			Here you get to spend your points that you can collect</br>
+			on the bottom of this page to redeem some cool deals that we have to offer! </br>
+			Make sure you have enough points or else you won't be able to purchase the item! </br>
+			You might need to supply your address or email address for purchase confirmation and directory. </br> 
+		</div>
+		<div id = "shirtSection">
+		SHIRTS </br>
+			<img src = "GTAVshirt.jpg"/> <br/> <span> 10 points </span> <br/> <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "GTAVpontiacshirt.jpg"/> <br/> <span> 10 points </span> <br/>  <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "skyrimHoodie.jpg"/> <br/> <span> 10 points </span> <br/>  <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "SkyrimOutfit.jpg"/> <br/> <span> 10 points </span> <br/>  <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "MarioCharShirt.jpg"/> <br/> <span> 10 points </span> <br/>  <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "MarioShirt.jpg"/> <br/> <span> 10 points </span> <br/>  <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "LoLVoliShirt.jpg"/> <br/> <span> 10 points </span> <br/>  <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "LoLMummyShirt.jpg"/> <br/> <span> 10 points </span> <br/>  <button id = "shirt" onclick = "afterShirtPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+		</div>
+		
+		<div id = "shoeSection">
+		SHOES </br>
+			<img src = "LoLConverse.jpg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "LoLShoes.jpg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "ZeldaShoes.jpg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "pokemonShoes.jpg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "DKShoes.jpeg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "marioShoes.jpg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "starwarShoes.jpg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "sonicShoes.jpg"/> <br/> <span> 20 points </span> <br/> <button id = "shoes" onclick = "afterShoePurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+		</div>
+		
+		<div id = "accessoriesSection">
+		Hand Held Crafts <br/>
+			<img src = "Lightsaber.png"/> <span> 50 points </span> <br/> <button id = "accessories" onclick = "afterAccessoriesPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "MCPickaxe.png"/> <span> 50 points </span> <br/> <button id = "accessories" onclick = "afterAccessoriesPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "MCSword.jpg"/> <span> 50 points </span> <br/> <button id = "accessories" onclick = "afterAccessoriesPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "skyrimHelmet.png"/> <span> 50 points </span> <br/> <button id = "accessories" onclick = "afterAccessoriesPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "ZeldaShield.png"/> <span> 50 points </span> <br/> <button id = "accessories" onclick = "afterAccessoriesPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+			<img src = "ZeldaSword.jpg"/> <span> 50 points </span> <br/> <button id = "accessories" onclick = "afterAccessoriesPurchase();location.href = 'purchase.html'"> Buy This Item! </button> <br/>
+		</div>
+		
+		<div id = "poll">
+		Quick Poll : What is your favorite type of game? <br/>
+		<label> MMORPG <input type = "radio" name = "Q1" value = "1" checked /></label> <br />
+		<label> First Person Shooters <input type = "radio" name = "Q1" value = "2" /></label> <br />
+		<label> Action <input type = "radio" name = "Q1" value = "3" /></label> <br />
+		<label>	Sports <input type = "radio" name = "Q1" value = "4" /></label> <br />
+		<label>	Adventure <input type = "radio" name = "Q1" value = "5" /></label> <br />
+		<label> Role - Playing <input type = "radio" name = "Q1" value = "6" /></label> <br />
+		<label> Fighting <input type = "radio" name = "Q1" value = "7" /></label> <br />
+		<label> Racing <input type = "radio" name = "Q1" value = "8" /></label> <br />
+		<label> Strategy <input type = "radio" name = "Q1" value = "9" /></label> <br />
+		<button id = "b1" onclick = "poll_1();"> Submit Poll Choice </button>  <br />
+		</div>
+		
+		<div id = "poll2">
+		Quick Poll : Which character from Mario do you like the best? <br/>
+		<label> Mario <input type = "radio" name = "Q1" value = "1" checked /></label> <br />
+		<label> Luigi <input type = "radio" name = "Q1" value = "2" /></label> <br />
+		<label> Princess Peach <input type = "radio" name = "Q1" value = "3" /></label> <br />
+		<label>	Bowser <input type = "radio" name = "Q1" value = "4" /></label> <br />
+		<label>	Yoshi <input type = "radio" name = "Q1" value = "5" /></label> <br />
+		<label> Rosalina <input type = "radio" name = "Q1" value = "6" /></label> <br />
+		<label> Toad <input type = "radio" name = "Q1" value = "7" /></label> <br />
+		<label> Wario <input type = "radio" name = "Q1" value = "8" /></label> <br />
+		<label> Bowser Jr. <input type = "radio" name = "Q1" value = "9" /></label> <br />
+		<button id = "b1" onclick = "poll_2();"> Submit Poll Choice </button>  <br />
+		</div>
+		
+		<div id = "poll3">
+		Quick Poll : Your girlfriend comes in when you are busy playing video games.<br/> 
+		She wants you to spend time with her. What will you do?  <br/>
+		<label> Continue playing your game because gaming is life! <input type = "radio" name = "Q1" value = "1" checked /></label> <br />
+		<label> Screw gaming! Spend some wonderful and delightful time with your girlfriend. <input type = "radio" name = "Q1" value = "2" /></label> <br />
+		<label> Let her play instead and teach her your smooth maneuvers. <input type = "radio" name = "Q1" value = "3" /></label> <br />
+		<label>	Dump her and find a gaming girlfriend. <input type = "radio" name = "Q1" value = "4" /></label> <br />
+		<button id = "b1" onclick = "poll_3();"> Submit Poll Choice </button>  <br />
+		</div>
+		
+		<div id = "poll4">
+		Quick Poll : Which gaming gear would you choose from the pile? <br/>
+		<label> Razer Hydra <input type = "radio" name = "Q1" value = "1" checked /></label> <br />
+		<label> Racing Wheel <input type = "radio" name = "Q1" value = "2" /></label> <br />
+		<label> Razer Naga Mouse <input type = "radio" name = "Q1" value = "3" /></label> <br />
+		<label>	Logitech Gaming Headset <input type = "radio" name = "Q1" value = "4" /></label> <br />
+		<label>	Gaming Speakers <input type = "radio" name = "Q1" value = "5" /></label> <br />
+		<label> Cherry MX Keybaords <input type = "radio" name = "Q1" value = "6" /></label> <br />
+		<button id = "b2" onclick = "poll_4();"> Submit Poll Choice </button>  <br />
+		</div>
+		
+		<div id = "poll5">
+		Quick Poll : Which kind of gaming snack would you prefer? <br/>
+		<label> Popcorn Chicken <input type = "radio" name = "Q1" value = "1" checked /></label> <br />
+		<label> Instant Ramen <input type = "radio" name = "Q1" value = "2" /></label> <br />
+		<label> Gummy Bears <input type = "radio" name = "Q1" value = "3" /></label> <br />
+		<label>	YOLO GAMING ALL NIGHT ENERGY DRINKS <input type = "radio" name = "Q1" value = "4" /></label> <br />
+		<label>	Frozen Pizza <input type = "radio" name = "Q1" value = "5" /></label> <br />
+		<label>	Chips and Doritos <input type = "radio" name = "Q1" value = "6" /></label> <br />
+		<label> Nachos and Cheese <input type = "radio" name = "Q1" value = "7" /></label> <br />
+		<label> WHAT IS FOOD? GAME TILL NEAR DEATH! <input type = "radio" name = "Q1" value = "8" /></label> <br />
+		<button id = "b2" onclick = "poll_5();"> Submit Poll Choice </button>  <br />
+		</div>
+		
+		<div id = "pollstate">
+		</div>
+		
+		<div id = "randomQ">
+		</div> </br>
+		
+		<script>
+			shirtSectionButtons = document.getElementById("shirtSection").getElementsByTagName("button");
+			shirtSectionsButtonsLength = document.getElementById("shirtSection").getElementsByTagName("button").length;
+			shoeSectionsButtonsLength = document.getElementById("shoeSection").getElementsByTagName("button").length;
+			accessoriesSectionsButtonsLength = document.getElementById("accessoriesSection").getElementsByTagName("button").length;
+			shoeSectionButtons = document.getElementById("shoeSection").getElementsByTagName("button");
+			accessoriesSectionButtons = document.getElementById("accessoriesSection").getElementsByTagName("button");
+			poll1 = document.getElementById("poll");
+			poll2 = document.getElementById("poll2");
+			poll3 = document.getElementById("poll3");
+			poll4 = document.getElementById("poll4");
+			poll5 = document.getElementById("poll5");
+		</script>
+	</body>
+</html>

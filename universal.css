@@ -1,0 +1,65 @@
+		body
+		{
+                        
+            margin:0px;
+            padding:0px;
+			background-image: url("paisley.jpg");
+			color:blue;
+			
+		}
+		img 
+		{
+			width:100px;
+			height:100px;
+		}
+		a
+		{
+			color:red;
+			text-decoration:none;
+		}
+		div#headlines
+                {
+                       text-align:center;
+			font:18pt arial;
+                        
+                      
+                        
+		}
+		div#title
+		{
+			position:absolute;
+            width:21%;
+			color:white;
+			font:24pt arial;
+			text-align:center;
+			border:solid;
+			border-radius:8px;
+			border-color:pink;
+			background-color: pink;
+			background-image: url("http://www.transparenttextures.com/patterns/argyle.png");
+			
+		}
+		img#richardsym
+		{
+			position:absolute;
+			margin-left:22%;
+			min-width:10%;
+			height:20%;
+			border:solid;
+			border-color:black;
+		}
+		tr#tr1
+               {
+            width:20%;
+		}
+        img#hotgames
+                {
+            width:140%;
+            height:20%;
+        }
+		table#t1
+                {
+            float:right;
+            width:450px;
+            
+        }
